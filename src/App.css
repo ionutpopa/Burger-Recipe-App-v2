@@ -1,38 +1,81 @@
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.recipes-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(182, 182, 182);
+    /* padding: 20px 10px; */
+    margin: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.home-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-form input {
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(182, 182, 182);
+    font-size: 15px;
+}
+
+.form input {
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(182, 182, 182);
+    font-size: 15px;
+}
+
+.description-field {
+    height: 150px;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 5px;
+    border: 1px solid rgb(182, 182, 182);
+    resize: none;
+    font-size: 15px;
+}
+
+label {
+    margin: 15px 0;
+}
+
+.submit-button {
+    margin-top: 20px;
+}
+
+.recipe {
+    width: 40%;
+}
+
+.errors {
+    padding-top: 5px;
+    color: rgba(235, 35, 0, 0.836);
+}
+
+.no-recipes-text {
+    text-align: center;
+    padding: 20px 0;
 }
